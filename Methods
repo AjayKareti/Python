@@ -1,0 +1,52 @@
+enumerate():
+
+x=('Goa','Paris','Island','Patna')
+y=enumerate(x)
+print(list(y))
+Output: [(0, 'Goa'), (1, 'Paris'), (2, 'Island'), (3, 'Patna')]
+
+reduce():
+
+from functools import reduce
+def do_sum(x1,x2):
+    return x1+x2
+print(reduce(do_sum,[1,2,3,4]))
+Output: 10
+
+map():
+
+# Return double of n
+def addition(n):
+    return n + n
+ # We double all numbers using map()
+numbers = (10, 20, 30, 40)
+result = map(addition, numbers)
+print(list(result))
+Output: [20, 40, 60, 80]
+
+filter():
+
+# Python filter() function example    
+def filterdata(x):    
+    if x<6:    
+        return x    
+# Calling function    
+result = filter(filterdata,(1,2,6))    
+# Displaying result    
+print(list(result))  
+Output: [1, 2]
+
+zip():
+
+a=("John","Kumar","Prathap")
+b=("Michel","Roy","Priya","Kajol")
+X=zip(a,b)
+print(tuple(X))
+Output: (('John', 'Michel'), ('Kumar', 'Roy'), ('Prathap', 'Priya'))
+
+id():
+
+X=('Car','Bike','Plane')
+y=id(X)
+print(y)
+Output: 2822999750272 (It varies at every time when we re Run the Code, because it is Memory address)
